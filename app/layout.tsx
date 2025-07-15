@@ -30,16 +30,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav>
-          <h3 className="text-xl mt-5 ms-5">    <span className="ms-5 underline hover:text-cyan-300 transition duration-150">
-            <Link href={'/'}>Info Next</Link>
-          </span>
-            <span className="ms-5 underline hover:text-cyan-300 transition duration-150">
-              <Link href={'/rutas'}>Rutas</Link>
-            </span>
-          </h3>
-
-        </nav>
         {children}
       </body>
     </html>
