@@ -5,9 +5,14 @@
   --foreground: #171717;
 }
 
+/* @theme inline parece ser una directiva personalizada o de una librería específica.
+   Si estás usando una librería como Geist para las fuentes, asegúrate de que esté configurada correctamente.
+   De lo contrario, puedes omitir o ajustar esta sección si no es necesaria.
+*/
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  /* Asegúrate de que --font-geist-sans y --font-geist-mono estén definidos si los usas */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -15,7 +20,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
+    /* Fondo muy oscuro para el tema */
     --foreground: #ededed;
+    /* Texto claro para el tema oscuro */
   }
 }
 
@@ -23,4 +30,51 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  /* Puedes reemplazar esto si usas Geist */
+  /* Asegura que el body ocupe al menos el alto de la pantalla para el fondo */
+  min-height: 100vh;
+}
+
+.bg-card {
+  background-color: #111111;
+}
+
+.resaltado {
+  font-weight: bold;
+  color: rgb(47, 191, 196);
+}
+
+/* --- Animaciones personalizadas --- */
+@layer utilities {
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-down {
+    animation: fadeInDown 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
 }
