@@ -1,5 +1,3 @@
-import { Navbar } from "@/components";
-
 export default function GeneralLayout({
     children
 }: {
@@ -7,7 +5,6 @@ export default function GeneralLayout({
 }) {
     return (
         <div>
-            <Navbar />
             <main className="flex flex-col items-center">
                 {children}
             </main>

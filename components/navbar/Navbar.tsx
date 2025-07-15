@@ -5,17 +5,13 @@ import { ActiveLink } from "../active-link/ActiveLink"
 
 const navItems = [
     {
-        path: "/resume-server-components", text: "Server Component"
-    },
-    {
-        path: "/rutas", text: "Rutas"
+        path: "/", text: "Home"
     },
     {
         path: "/contacto", text: "Contacto"
     },
 ]
 
-//Functional Component
 export const Navbar = () => {
     return (
         <nav className="flex w-[100%] px-5 mb-10 bg-[#101010] py-3 text-center items-center justify-between">
