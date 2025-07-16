@@ -54,8 +54,7 @@ const guideStepsData = [
                     ¡Recuerda: en Next.js con el App Router, <strong className="text-white">todos los componentes son React Server Components (RSC) por defecto</strong>! Esto significa que se renderizan completamente en el servidor, lo que mejora el rendimiento inicial de tu aplicación y reduce la cantidad de JavaScript enviada al navegador del usuario. Son perfectos para fetching de datos y contenido estático.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                    Si necesitas interactividad del lado del cliente (como usar hooks de React como `useState` o `useEffect`, manejar eventos del navegador, o acceder al DOM), debes convertir tu componente en un <strong className="text-white">Client Component</strong> añadiendo la directiva <code className="bg-gray-700 px-1 rounded">'use client'</code> al inicio de tu archivo.
-                </p>
+                    Si necesitas interactividad del lado del cliente (como usar hooks de React como useState o useEffect, manejar eventos del navegador, o acceder al DOM), debes convertir tu componente en un <strong className="text-white">Client Component</strong> añadiendo la directiva <code className="bg-gray-700 px-1 rounded">use client</code> al inicio de tu archivo.  </p>
                 <p className="text-lg text-gray-300 leading-relaxed">
                     Comprender cuándo usar <strong className="text-white">Server Components</strong> y <strong className="text-white">Client Components</strong> es clave para construir aplicaciones Next.js eficientes y optimizadas.
                 </p>
@@ -97,7 +96,7 @@ const guideStepsData = [
                     Simplemente conecta tu repositorio de GitHub a Vercel, y este detectará automáticamente que es un proyecto Next.js y lo desplegará. Las actualizaciones se harán automáticamente con cada `push` a tu rama principal.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                    ¡Demuestra que crear y desplegar tu primera app Next.js es posible "sin morir en el intento"!
+                    ¡Demuestra que crear y desplegar tu primera app Next.js es posible sin mayores complicaciones!
                 </p>
             </>
         ), // <-- Cierre correcto del content del Paso 5
