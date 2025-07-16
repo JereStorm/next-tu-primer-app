@@ -63,26 +63,6 @@ const guideStepsData = [
         ),
     },
     {
-        title: "Paso 3: Server Components vs. Client Components en la Práctica",
-        description: "Aprende a diferenciar y usar correctamente los componentes de servidor y cliente en React.",
-        gradientFrom: "from-orange-300",
-        gradientTo: "to-red-400",
-        content: (
-            <>
-                <h3 className="text-2xl font-semibold text-blue-300 mb-4">React Server Components: La Nueva Era del Rendimiento</h3>
-                <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                    ¡Recuerda: en Next.js con el App Router, <strong className="text-white">todos los componentes son React Server Components (RSC) por defecto</strong>! Esto significa que se renderizan completamente en el servidor, lo que mejora el rendimiento inicial de tu aplicación y reduce la cantidad de JavaScript enviada al navegador del usuario. Son perfectos para fetching de datos y contenido estático.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                    Si necesitas interactividad del lado del cliente (como usar hooks de React como `useState` o `useEffect`, manejar eventos del navegador, o acceder al DOM), debes convertir tu componente en un <strong className="text-white">Client Component</strong> añadiendo la directiva <code className="bg-gray-700 px-1 rounded">'use client'</code> al inicio de tu archivo.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed">
-                    Comprender cuándo usar <strong className="text-white">Server Components</strong> y <strong className="text-white">Client Components</strong> es clave para construir aplicaciones Next.js eficientes y optimizadas.
-                </p>
-            </>
-        ),
-    },
-    {
         title: "Paso 4: Estilizando con Tailwind CSS y Optimización SEO (Metadata)",
         description: "Descubre cómo Tailwind CSS acelera tu diseño y cómo la Metadata mejora la visibilidad de tu app.",
         gradientFrom: "from-green-300",
@@ -126,8 +106,7 @@ const guideStepsData = [
 
 export const Steps = () => {
     return (
-        <div className="max-w-4xl mt-16 mx-auto px-2 sm:p-6 lg:p-8"> {/* Contenedor más estrecho para mejor lectura */}
-
+        <div className="font-sans max-w-4xl mx-auto px-2 sm:p-6 lg:p-8"> {/* Contenedor más estrecho para mejor lectura */}
             {/* Sección de los 5 pasos: ahora bloques de contenido fluido */}
             <section className="space-y-16"> {/* Espacio generoso entre cada paso */}
 
